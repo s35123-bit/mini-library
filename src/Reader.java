@@ -1,4 +1,5 @@
 public class Reader {
+    // Fields [cite: 54]
     private String firstName;
     private String lastName;
     private int cardNumber;
@@ -11,17 +12,18 @@ public class Reader {
         this.borrowedCount = 0;
     }
 
+    // Methods [cite: 55]
     public void printData() {
-        System.out.println("Reader: " + firstName + " " + lastName + " | ID: " + cardNumber + " | Books: " + borrowedCount); 
+        System.out.println("Reader: " + firstName + " " + lastName + " | ID: " + cardNumber + " | Borrowed: " + borrowedCount);
     }
 
     public void increaseBorrowedCount() {
-        this.borrowedCount++; // [cite: 55]
+        this.borrowedCount++;
     }
 
     public void decreaseBorrowedCount() {
-        if (borrowedCount > 0) {
-            this.borrowedCount--; // [cite: 55]
+        if (this.borrowedCount > 0) {
+            this.borrowedCount--;
         }
     }
 }

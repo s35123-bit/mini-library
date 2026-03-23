@@ -14,5 +14,12 @@ public class Main {
         System.out.println("--- Returning Book 1 ---");
         b1.returnBook();
         b1.printInfo();
+
+        Reader r1 = new Reader("John", "Doe", 1001);
+        Reader r2 = new Reader("Jane", "Smith", 1002);
+        
+        r1.increaseBorrowedCount();
+        r1.printData();
+        r2.printData();
     }
 }
