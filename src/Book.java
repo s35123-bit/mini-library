@@ -22,4 +22,12 @@ public class Book {
     public void returnBook() {
         this.available = true;
     }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public boolean isAvailable() {
+        return available;
+    }
 }

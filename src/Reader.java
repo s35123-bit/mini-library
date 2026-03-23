@@ -1,5 +1,4 @@
 public class Reader {
-    // Fields [cite: 54]
     private String firstName;
     private String lastName;
     private int cardNumber;
@@ -12,7 +11,6 @@ public class Reader {
         this.borrowedCount = 0;
     }
 
-    // Methods [cite: 55]
     public void printData() {
         System.out.println("Reader: " + firstName + " " + lastName + " | ID: " + cardNumber + " | Borrowed: " + borrowedCount);
     }
@@ -25,5 +23,9 @@ public class Reader {
         if (this.borrowedCount > 0) {
             this.borrowedCount--;
         }
+    }
+
+    public String getLastName() {
+        return lastName;
     }
 }
