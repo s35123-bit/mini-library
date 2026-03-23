@@ -12,7 +12,7 @@ public class Reader {
     }
 
     public void printData() {
-        System.out.println("Reader: " + firstName + " " + lastName + " | ID: " + cardNumber + " | Books: " + borrowedCount); // [cite: 55]
+        System.out.println("Reader: " + firstName + " " + lastName + " | ID: " + cardNumber + " | Books: " + borrowedCount); 
     }
 
     public void increaseBorrowedCount() {
